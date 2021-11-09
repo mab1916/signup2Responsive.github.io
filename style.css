@@ -3,10 +3,11 @@
     padding: 0px;
 }
 body {
-    height: 125vh;
+    height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* Box 1 */
 .box1 {
@@ -56,6 +57,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background: #f2f6ff;
     border-radius: 10% 10% 10% 0;
 }
@@ -72,7 +74,142 @@ body {
 }
 .box2Div {
     width: 60%;
-    height: auto;
+    margin-top: 30px;
+}
+/* Style the tab */
+.tab {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 40px;
+    padding: 3% 10% 50%;
+    box-shadow: 0px 0px 10px 3px #d1d8eb;
+}
+/* Style the buttons inside the tab */
+.tablinks {
+    background-color: #f6f6f8;
+    color: #a3b5c2;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 0;
+    margin: 0 20px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+/* Change background color of buttons on hover */
+.tablinks:hover {
+    color: black;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    color: black;
+    border-bottom: 2px solid rgb(75, 75, 168);
+}
+/* Style the tab content */
+.tabcontent {
+    box-shadow: 0px 5px 10px 2px #d1d8eb;
+    background-color: #fff;
+    position: relative;
+    margin-left: -12.7%;
+    padding: 5%;
+    width: 114.7%;
+    border: 1px solid #ccc;
+    float: left;
+    border-radius: 40px;
+}
+/* Form Input */
+.input-field {
+    position: relative;
+    line-height: 60px;
+    padding: 0px 20px;
+}
+.labelFor {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 100%;
+    color: #cbacac;
+    transition: 0.2s all;
+    cursor: text;
+}
+.inputSignup {
+    width: 100%;
+    padding: 22px 0 5px 5px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    color: #111;
+}
+.inputSignup:invalid {
+    outline: 0;
+}
+.inputSignup:focus,
+.inputSignup:valid {
+    border-color: rgb(75, 75, 168);
+}
+.inputSignup:focus~label,
+.inputSignup:valid~label {
+    font-size: 12px;
+    top: -20px;
+    left: 25px;
+    color: rgb(75, 75, 168);
+}
+/* Buttons */
+.signUpBtn {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(96, 96, 214);
+    cursor: pointer;
+}
+.signUpBtn:hover {
+    background-color: rgb(32, 32, 223);
+}
+.haveOrNot {
+    color: red;
+    cursor: pointer;
+}
+.haveOrNot:hover {
+    color: black;
+    text-decoration: underline;
+}
+/* Icons */
+.box2Div2 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.linksIcons {
+    font-size: 30px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.linksIcons:hover {
+    background-color: rgb(32, 32, 223);
+    color: white;
+}
+.bottomLinks {
+    display: flex;
+    cursor: pointer;
+}
+.bottomIcons {
+    color: rgb(32, 32, 223);
+}
+.bottomText {
+    margin-left: 15px;
+}
+.bottomLinks:hover {
+    text-decoration: underline;
 }
 @media screen and (min-width: 4001px) and (max-width: 6000px) {
     /* Box 1 */
